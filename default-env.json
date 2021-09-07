@@ -32,7 +32,7 @@
 				},
 				"syslog_drain_url": null,
 				"volume_mounts": []
-			}
+			} 
         ]
     }
 }
