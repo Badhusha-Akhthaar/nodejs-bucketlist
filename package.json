@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-bucketlist",
+  "version": "1.0.0",
+  "description": "Bucketlist app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/xsenv": "^3.1.1",
+    "@sap/xssec": "^3.2.3",
+    "express": "^4.17.1",
+    "passport": "^0.4.1",
+    "@sap/hana-client": "2.9.28"
+  }
+}

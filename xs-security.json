@@ -1,0 +1,23 @@
+{
+	"xsappname": "bucketlist",
+	"tenant-mode": "dedicated",
+	"scopes": 
+	[
+		{
+			"name": "$XSAPPNAME.Display",
+			"description": "With this scope, information can be read."
+		}
+	],
+
+	"role-templates": 
+	[
+		{
+			"name": "AccessRole",
+			"description": "Role to call the spring-security-basic-auth service",
+			"scope-references": 
+			[
+				"$XSAPPNAME.Display"
+			]
+		}
+	]
+}  

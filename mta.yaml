@@ -1,0 +1,24 @@
+_schema-version: "3.2"
+ID: bucketlist
+version: 0.0.1
+modules:
+- name: bucketlist
+  type: nodejs
+  path: /
+  requires:
+  - name: all-apps-xsuaa
+  - name: bucket-list-hana
+  parameters:
+    disk-quota: 256M
+    memory: 256M
+resources:
+- name: all-apps-xsuaa
+  type: org.cloudfoundry.existing-service
+- name: bucket-list-hana
+  type: org.cloudfoundry.existing-service
+
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npm install
